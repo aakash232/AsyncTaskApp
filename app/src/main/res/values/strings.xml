@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AsyncTaskApp</string>
+    <string name="header">Asynchronous Task</string>
+    <string name="start_task">START</string>
+    <string name="stop_task">STOP</string>
+    <string name="display_text">This is a simple demonstration of Asynchronous Task</string>
+</resources>

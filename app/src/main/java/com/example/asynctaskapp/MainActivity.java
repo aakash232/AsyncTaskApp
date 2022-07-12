@@ -17,13 +17,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MyAsyncTask task = new MyAsyncTask();
-
         initViews();
 
         btn_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MyAsyncTask task = new MyAsyncTask();
                 task.execute();
             }
         });
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getBaseContext(), "Asynchrounous Task stopped", Toast.LENGTH_SHORT).show();
                 displayTxt.setSelected(false);
-                displayTxt.setVisibility(View.INVISIBLE);
+                //displayTxt.setVisibility(View.INVISIBLE);
             }
         });
     }
